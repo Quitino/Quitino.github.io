@@ -61,7 +61,7 @@ http://localhost:4000/
 
 
 
->Q: 为什么预览的时候有这篇文章,上传后不显示呢.
->A: 每次上传:
->   bundle exec jekyll clean
->   bundle exec jekyll serve
+>Q: 为什么预览的时候有这篇文章,上传后不显示呢.  
+>A: 每次上传:  
+>   bundle exec jekyll clean  
+>   bundle exec jekyll serve  
