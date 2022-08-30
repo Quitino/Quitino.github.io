@@ -74,6 +74,7 @@ kramdown:
 
 # port
 # port: 1234
+future: true
 
 # url
 category_dir: category/
