@@ -5,9 +5,25 @@
     <description></description>
     <link>https://quitino.github.io/</link>
     <atom:link href="https://quitino.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 30 Apr 2025 10:22:19 +0000</pubDate>
-    <lastBuildDate>Wed, 30 Apr 2025 10:22:19 +0000</lastBuildDate>
+    <pubDate>Wed, 30 Apr 2025 10:31:17 +0000</pubDate>
+    <lastBuildDate>Wed, 30 Apr 2025 10:31:17 +0000</lastBuildDate>
     <generator>Jekyll v4.0.1</generator>
+    
+      <item>
+        <title>项目概览</title>
+        <description>
+简单记录一些项目。
+</description>
+        <pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate>
+        <link>https://quitino.github.io/2025/04/30/resume/</link>
+        <guid isPermaLink="true">https://quitino.github.io/2025/04/30/resume/</guid>
+        
+        <category>work</category>
+        
+        
+        <category>work</category>
+        
+      </item>
     
       <item>
         <title>ubuntu18.04安装jekyll</title>

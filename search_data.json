@@ -1,6 +1,14 @@
 [
 
 {
+	"title"    : "项目概览",
+	"category" : "work",
+	"tags"     : "work",
+	"url"      : "/2025/04/30/resume/",
+	"date"     : "2025-04-30 00:00:00 +0000"
+} ,
+
+{
 	"title"    : "ubuntu18.04安装jekyll",
 	"category" : "环境配置",
 	"tags"     : "jekyll, 环境配置",

@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="32R9v08Uiv20hFwRAL3vXSaE-JlUPw2TsLaywrO7cRI" />
 
-    <title>标签</title>
-    <meta name="description" content="">
+    <title>项目概览</title>
+    <meta name="description" content="简单记录一些项目。">
 
     <link rel="stylesheet" href="//unpkg.com/heti/umd/heti.min.css">
     <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
@@ -21,7 +21,7 @@
 
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
     <link rel="stylesheet" href="/css/main.css ">
-    <link rel="canonical" href="https://quitino.github.io/tag/">
+    <link rel="canonical" href="https://quitino.github.io/2025/04/30/resume/">
     <link rel="alternate" type="application/rss+xml" title="Quitino" href="https://quitino.github.io/feed.xml ">
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4505690491252051"
@@ -107,8 +107,8 @@
                     
                     <li>
                         
-                        <a class="active" href="/tag/">
-                            
+                        <a href="/tag/">
+                        
                             <i class="fa fa-tags"></i>标签
                         </a>
                     </li>
@@ -160,65 +160,25 @@
 </header>
 
 
-        <div class="page clearfix">
+        <div class="page clearfix" post>
     <div class="left">
-        <h1>标签</h1>
-        <hr>
-        
-        
+        <h1>项目概览</h1>
+        <div class="label">
 
-        <ul>
-        
-          <h2 id="jekyll">jekyll</h2>
-          
-            <li>
-                <time>
-                2022-08-28 Sun.
-                </time>
-                <a class="title" href="/2022/08/28/ubuntu-install-jekyll/">ubuntu18.04安装jekyll</a>
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2025-04-30
+            </div>
 
+            <div class="label-card">
                 
+            </div>
 
-
-<!-- <span class="point">•</span> -->
-<span class="categories">
-  <i class="fa fa-th-list"></i>
-  
-    
-        <a href="/category/#环境配置" title="Category: 环境配置" rel="category">环境配置</a>
-    
-  
-
-  <!-- <span class="point">•</span> -->
-</span>
-
-
+            <div class="label-card">
                 
-<!-- <span class="point">•</span> -->
-<span class="pageTag">
-  <i class="fa fa-tags"></i>
-  
-    
-        <a href="/tag/#jekyll" title="Tag: jekyll" rel="tag">jekyll</a>&nbsp;
-    
-        <a href="/tag/#环境配置" title="Tag: 环境配置" rel="tag">环境配置</a>
-    
-  
+            </div>
 
-</span>
-
-            </li>
-          
-        
-          <h2 id="work">work</h2>
-          
-            <li>
-                <time>
-                2025-04-30 Wed.
-                </time>
-                <a class="title" href="/2025/04/30/resume/">项目概览</a>
-
-                
+            <div class="label-card">
+            
 
 
 <!-- <span class="point">•</span> -->
@@ -234,102 +194,192 @@
 </span>
 
 
-                
+            </div>
+
+            <div class="label-card">
+            
 <!-- <span class="point">•</span> -->
 <span class="pageTag">
   <i class="fa fa-tags"></i>
   
     
+        <!--a href="/tag/#work" title="Tag: work" rel="tag">work</a-->
         <a href="/tag/#work" title="Tag: work" rel="tag">work</a>
     
   
 
 </span>
 
-            </li>
-          
+            </div>
+
+            <div class="label-card">
+              <small style="color: #586069;">
+                本文 354 字，阅读全文约需 2  分钟
+              </small>
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <ul id="markdown-toc">
+  <li><a href="#202406-至今--经验轨迹" id="markdown-toc-202406-至今--经验轨迹">2024.06-至今 | 经验轨迹</a></li>
+  <li><a href="#202310-202405--激光众包多程建图" id="markdown-toc-202310-202405--激光众包多程建图">2023.10-2024.05 | 激光众包（多程）建图</a></li>
+</ul>
+
+<p>简单记录一些项目。</p>
+
+<h2 id="202406-至今--经验轨迹">2024.06-至今 | 经验轨迹</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center"> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="./../../assets/resume/exp_track_02.png" alt="" /></td>
+      <td style="text-align: center"><img src="./../../assets/resume/exp_track_01.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>路网吸附:</p>
+<ul>
+  <li>通用功能：轨迹，sd, hq 之间 HMM 匹配</li>
+  <li>轨迹吸附到sd路网，生成sd序列，作为路由</li>
+</ul>
+
+<p>轨迹聚类 ：</p>
+<ul>
+  <li>路由内的轨迹进行聚类，DBscan + 矢量参考</li>
+</ul>
+
+<p>拓扑生成：</p>
+<ul>
+  <li>轨迹拟合：参考轨迹 + 多轨迹融合处的 singlepath + 轨迹平滑</li>
+  <li>轨迹选择： HMM 计算先验概率和转移概率，viterbi 选择最佳</li>
+</ul>
+
+<h2 id="202310-202405--激光众包多程建图">2023.10-2024.05 | 激光众包（多程）建图</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center"> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="./../../assets/resume/multi_lidar_slam_01.jpg" alt="" /></td>
+      <td style="text-align: center"><img src="./../../assets/resume/multi_lidar_slam_02.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>激光单程对齐:</p>
+<ul>
+  <li>v1:使用定位融合结果进行单程帧间对齐和拼接;</li>
+  <li>v2:使用定位融合,imu,轮速,rtk紧耦合优化单程</li>
+</ul>
+
+<p>多程对齐:</p>
+<ul>
+  <li>同一个调度任务内的激光进行track－track的对齐</li>
+</ul>
+
+<p>半自动对齐：</p>
+<ul>
+  <li>人工标注出约束关系，实现点云与地图对齐</li>
+</ul>
+
+
+        </article>
+        <small><strong>原文地址</strong> https://quitino.github.io/2025/04/30/resume/</small>
+        <hr>
+		
+<div id="post-reward" class="post-reward">
+  <input type="checkbox" name="reward" id="reward" hidden="" />
+  <label class="reward-button" for="reward">赞赏支持</label>
+  <div class="qr-code">
+    
+    <label class="qr-code-image" for="reward">
+      <img class="image" src="/assets/images/wechat-pay.jpg" />
+      <span>微信赞赏</span>
+    </label>
+     
+  </div>
+</div>
+
+<script></script>
+
+
+		<hr>
         
-          <h2 id="同学">同学</h2>
-          
-            <li>
-                <time>
-                2022-08-28 Sun.
-                </time>
-                <a class="title" href="/2022/08/28/classmates-dinner/">同学小聚&建站之旅</a>
-
-                
-
-
-<!-- <span class="point">•</span> -->
-<span class="categories">
-  <i class="fa fa-th-list"></i>
-  
-    
-        <a href="/category/#随笔" title="Category: 随笔" rel="category">随笔</a>
-    
-  
-
-  <!-- <span class="point">•</span> -->
-</span>
-
-
-                
-<!-- <span class="point">•</span> -->
-<span class="pageTag">
-  <i class="fa fa-tags"></i>
-  
-    
-        <a href="/tag/#同学" title="Tag: 同学" rel="tag">同学</a>
-    
-  
-
-</span>
-
-            </li>
-          
         
-          <h2 id="环境配置">环境配置</h2>
-          
-            <li>
-                <time>
-                2022-08-28 Sun.
-                </time>
-                <a class="title" href="/2022/08/28/ubuntu-install-jekyll/">ubuntu18.04安装jekyll</a>
-
+            
+            
                 
-
-
-<!-- <span class="point">•</span> -->
-<span class="categories">
-  <i class="fa fa-th-list"></i>
-  
-    
-        <a href="/category/#环境配置" title="Category: 环境配置" rel="category">环境配置</a>
-    
-  
-
-  <!-- <span class="point">•</span> -->
-</span>
-
-
+                    
                 
-<!-- <span class="point">•</span> -->
-<span class="pageTag">
-  <i class="fa fa-tags"></i>
-  
-    
-        <a href="/tag/#jekyll" title="Tag: jekyll" rel="tag">jekyll</a>&nbsp;
-    
-        <a href="/tag/#环境配置" title="Tag: 环境配置" rel="tag">环境配置</a>
-    
-  
-
-</span>
-
-            </li>
-          
+            
+                
+                    
+                
+            
         
-        </ul>
+            
+            
+                
+                    
+                
+            
+        
+        
+
+        <div class="post-recent">
+    <div class="pre">
+        
+        <p><strong>上一篇</strong> <a href="/2022/08/28/ubuntu-install-jekyll/">ubuntu18.04安装jekyll</a></p>
+        
+    </div>
+    <div class="nex">
+
+        
+    </div>
+</div>
+
+
+        <h2 id="comments">Comments</h2>
+		
+
+
+
+
+
+
+
+
+<div id="waline"></div>
+  <script>
+    Waline.init({
+      el: '#waline',
+      serverURL: '',
+      comment: true, // 评论数统计
+    });
+  </script>
+
+
 
     </div>
     <button class="anchor"><i class="fa fa-anchor"></i></button>
@@ -343,31 +393,7 @@
                 </div>
                 <ul id="content-side" class="content-ul">
                     
-                    <li>
-                        <a data-scroll href="#jekyll">
-                            jekyll (1)
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a data-scroll href="#work">
-                            work (1)
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a data-scroll href="#同学">
-                            同学 (1)
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a data-scroll href="#环境配置">
-                            环境配置 (1)
-                        </a>
-                    </li>
-                    
-
+                    <li><a href="#comments">评论</a></li>
                 </ul>
             </div>
             <!-- 其他div框放到这里 -->
@@ -375,7 +401,20 @@
         </div>
     </div>
 </div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a:not([id])')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
 <script src="/js/pageContent.js " charset="utf-8"></script>
+<script src="https://cdn.bootcss.com/clipboard.js/2.0.4/clipboard.min.js"></script>
+<script src="/js/code-copy.js "></script>
 
 
     <footer class="site-footer">
