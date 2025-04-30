@@ -15,8 +15,8 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.0'  # 我们继续用 3.0，但会手动升级 rubygems
-          bundler-cache: false  # 先禁用缓存避免旧缓存干扰
+          ruby-version: '3.0'
+          bundler-cache: false
 
       - name: Upgrade RubyGems
         run: |
@@ -26,9 +26,25 @@ jobs:
         run: |
           gem install bundler -v '>= 2.0'
 
+      - name: Configure Bundler
+        run: |
+          bundle config set path 'vendor/bundle'
+          bundle config set deployment 'true'
+
+      - name: Install dependencies
+        run: |
+          bundle install
+      - name: Check versions
+        run: |
+          ruby -v
+          gem -v
+          bundle -v
+
+      - name: Show installed gems
+        run: |
+          ls -la vendor/bundle
       - name: Build Jekyll site
         run: |
-          bundle install --path vendor/bundle --deployment
           bundle exec jekyll build
 
       - name: Deploy to GitHub Pages
