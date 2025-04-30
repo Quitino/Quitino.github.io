@@ -214,7 +214,7 @@
 
             <div class="label-card">
               <small style="color: #586069;">
-                本文 354 字，阅读全文约需 2  分钟
+                本文 773 字，阅读全文约需 3  分钟
               </small>
             </div>
 
@@ -224,6 +224,9 @@
         <ul id="markdown-toc">
   <li><a href="#202406-至今--经验轨迹" id="markdown-toc-202406-至今--经验轨迹">2024.06-至今 | 经验轨迹</a></li>
   <li><a href="#202310-202405--激光众包多程建图" id="markdown-toc-202310-202405--激光众包多程建图">2023.10-2024.05 | 激光众包（多程）建图</a></li>
+  <li><a href="#202303-202308--基于nerf的三维地图重建" id="markdown-toc-202303-202308--基于nerf的三维地图重建">2023.03-2023.08 | 基于Nerf的三维地图重建</a></li>
+  <li><a href="#202203-202302--基于cartographer的语义地图" id="markdown-toc-202203-202302--基于cartographer的语义地图">2022.03-2023.02 | 基于cartographer的语义地图</a></li>
+  <li><a href="#202108-202202--基于车辆轨迹的路网提取" id="markdown-toc-202108-202202--基于车辆轨迹的路网提取">2021.08-2022.02 | 基于车辆轨迹的路网提取</a></li>
 </ul>
 
 <p>简单记录一些项目。</p>
@@ -233,18 +236,14 @@
 <table>
   <thead>
     <tr>
-      <th style="text-align: center"> </th>
-      <th style="text-align: center"> </th>
+      <th style="text-align: center">路口</th>
+      <th style="text-align: center">收费站</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align: center"><img src="/assets/resume/exp_track_02.png" alt="" /></td>
       <td style="text-align: center"><img src="/assets/resume/exp_track_01.png" alt="" /></td>
-    </tr>
-    <tr>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
     </tr>
   </tbody>
 </table>
@@ -271,18 +270,14 @@
 <table>
   <thead>
     <tr>
-      <th style="text-align: center"> </th>
-      <th style="text-align: center"> </th>
+      <th style="text-align: center">路口1</th>
+      <th style="text-align: center">路口2</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align: center"><img src="/assets/resume/multi_lidar_slam_01.jpg" alt="" /></td>
       <td style="text-align: center"><img src="/assets/resume/multi_lidar_slam_02.png" alt="" /></td>
-    </tr>
-    <tr>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
     </tr>
   </tbody>
 </table>
@@ -303,6 +298,62 @@
   <li>人工标注出约束关系，实现点云与地图对齐</li>
 </ul>
 
+<h2 id="202303-202308--基于nerf的三维地图重建">2023.03-2023.08 | 基于Nerf的三维地图重建</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">法向</th>
+      <th style="text-align: center">渲染</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="/assets/resume/nerf_1.png" alt="" /></td>
+      <td style="text-align: center"><img src="/assets/resume/nerf_2.png" alt="" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>基于Nerf的道路稠密重建， 用于打造数据闭环， 提供给数据仿真以及地图重建等使用。</p>
+
+<h2 id="202203-202302--基于cartographer的语义地图">2022.03-2023.02 | 基于cartographer的语义地图</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">分支定界</th>
+      <th style="text-align: center">栅格地图</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="/assets/resume/avp_0.png" alt="" /></td>
+      <td style="text-align: center"><img src="/assets/resume/avp_1.png" alt="" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>使用CV组处理的AVM环视语义信息， 基于cartographer开发带前端匹配、 后端优化的语义地图构建系统， 同时设计算法对建图质量进行评估。</p>
+
+<h2 id="202108-202202--基于车辆轨迹的路网提取">2021.08-2022.02 | 基于车辆轨迹的路网提取</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">栅格地图</th>
+      <th style="text-align: center">topo地图</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="/assets/resume/hdmap_convert_01.png" alt="" /></td>
+      <td style="text-align: center"><img src="/assets/resume/hdmap_convert_02.png" alt="" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>使用车辆轨迹进行膨胀、平滑、骨架提取、骨架扫描等处理获取骨架中的junction和link。然后再对路网进行精细化处理如Junction融合、剔除细小分支、自身环分割、 B样条平滑等获取更加准确的路网信息。</p>
 
         </article>
         <small><strong>原文地址</strong> https://quitino.github.io/2025/04/30/resume/</small>
