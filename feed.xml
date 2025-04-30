@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quitino</title>
+    <description></description>
+    <link>https://quitino.github.io/</link>
+    <atom:link href="https://quitino.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 30 Apr 2025 09:52:09 +0000</pubDate>
+    <lastBuildDate>Wed, 30 Apr 2025 09:52:09 +0000</lastBuildDate>
+    <generator>Jekyll v4.0.1</generator>
+    
+      <item>
+        <title>ubuntu18.04安装jekyll</title>
+        <description>
+昨晚折腾几小时，想复杂了。还是该早点睡觉的，脑袋晕了就该睡了，第二天再弄。
+</description>
+        <pubDate>Sun, 28 Aug 2022 20:48:28 +0000</pubDate>
+        <link>https://quitino.github.io/2022/08/28/ubuntu-install-jekyll/</link>
+        <guid isPermaLink="true">https://quitino.github.io/2022/08/28/ubuntu-install-jekyll/</guid>
+        
+        <category>jekyll</category>
+        
+        <category>环境配置</category>
+        
+        
+        <category>环境配置</category>
+        
+      </item>
+    
+      <item>
+        <title>同学小聚&amp;建站之旅</title>
+        <description>
+本科同学到北京出差,晚上约了晚饭,回家后就开始建自己的网站,算作是一个开端吧.
+</description>
+        <pubDate>Sun, 28 Aug 2022 12:49:17 +0000</pubDate>
+        <link>https://quitino.github.io/2022/08/28/classmates-dinner/</link>
+        <guid isPermaLink="true">https://quitino.github.io/2022/08/28/classmates-dinner/</guid>
+        
+        <category>同学</category>
+        
+        
+        <category>随笔</category>
+        
+      </item>
+    
+  </channel>
+</rss>

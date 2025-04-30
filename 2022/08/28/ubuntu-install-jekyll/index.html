@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="32R9v08Uiv20hFwRAL3vXSaE-JlUPw2TsLaywrO7cRI" />
+
+    <title>ubuntu18.04安装jekyll</title>
+    <meta name="description" content="昨晚折腾几小时，想复杂了。还是该早点睡觉的，脑袋晕了就该睡了，第二天再弄。">
+
+    <link rel="stylesheet" href="//unpkg.com/heti/umd/heti.min.css">
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <!--link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"-->
+    <!-- load all Font Awesome styles -->
+    <link href="/assets/fontawesome-free-6.1.2-web/css/all.css" rel="stylesheet" />
+    <!-- support v4 icon references/syntax -->
+    <link href="/assets/fontawesome-free-6.1.2-web/css/v4-shims.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="https://quitino.github.io/2022/08/28/ubuntu-install-jekyll/">
+    <link rel="alternate" type="application/rss+xml" title="Quitino" href="https://quitino.github.io/feed.xml ">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4505690491252051"
+     crossorigin="anonymous"></script>
+
+
+
+
+
+<script src="//unpkg.com/heti/umd/heti-addon.min.js"></script>
+<script>
+  const heti = new Heti('.heti');
+  heti.autoSpacing(); // 自动进行中西文混排美化和标点挤压
+</script>
+
+
+
+
+<script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/@waline/client@v2/dist/waline.css"
+  />
+
+</head>
+
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Quitino</a>
+        <small>一事有恒,万事渐振</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>主页
+                    </a>
+                </li>
+                <li>
+
+                    <a href="/running_page/">
+                        <i class="fa fa-running"></i>跑步
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>存档
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/books/">
+                        
+                            <i class="fa fa-book"></i>书影音
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>分类
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>标签
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/collection/">
+                        
+                            <i class="fa fa-bookmark"></i>收藏
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/nav/">
+                        
+                            <i class="fa fa-location-arrow"></i>链接
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/about/">
+                        
+                            <i class="fa fa-heart"></i>关于
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" post>
+    <div class="left">
+        <h1>ubuntu18.04安装jekyll</h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2022-08-28
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#环境配置" title="Category: 环境配置" rel="category">环境配置</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#jekyll" title="Tag: jekyll" rel="tag">jekyll</a-->
+        <a href="/tag/#jekyll" title="Tag: jekyll" rel="tag">jekyll</a>&nbsp;
+    
+        <!--a href="/tag/#%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE" title="Tag: 环境配置" rel="tag">环境配置</a-->
+        <a href="/tag/#环境配置" title="Tag: 环境配置" rel="tag">环境配置</a>
+    
+  
+
+</span>
+
+            </div>
+
+            <div class="label-card">
+              <small style="color: #586069;">
+                本文 815 字，阅读全文约需 3  分钟
+              </small>
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <ul id="markdown-toc">
+  <li><a href="#jekyll安装" id="markdown-toc-jekyll安装">jekyll安装</a></li>
+</ul>
+
+<p>昨晚折腾几小时，想复杂了。还是该早点睡觉的，脑袋晕了就该睡了，第二天再弄。</p>
+
+<h2 id="jekyll安装">jekyll安装</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get update
+<span class="nb">sudo </span>apt-get upgrade
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>make build-essential
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>ruby ruby-dev
+<span class="c">#添加环境变量</span>
+<span class="nb">echo</span> <span class="s1">'# Install Ruby Gems to ~/gems'</span> <span class="o">&gt;&gt;</span> ~/.bashrc
+<span class="nb">echo</span> <span class="s1">'export GEM_HOME="$HOME/gems"'</span> <span class="o">&gt;&gt;</span> ~/.bashrc
+<span class="nb">echo</span> <span class="s1">'export PATH="$HOME/gems/bin:$PATH"'</span> <span class="o">&gt;&gt;</span> ~/.bashrc
+<span class="nb">source</span> ~/.bashrc
+gem update <span class="nt">--system</span> 
+<span class="c">#安装jekyll</span>
+gem <span class="nb">install </span>jekyll
+gem <span class="nb">install </span>bundler <span class="nt">-v</span> <span class="s1">'1.17.3'</span>
+bundle <span class="nb">install
+</span>bundle add webrick
+jekyll <span class="nt">-v</span> <span class="c">#查看版本</span>
+
+<span class="c">#切到博客文件夹下</span>
+bundle <span class="nb">exec </span>jekyll serve
+
+<span class="c">#浏览器中预览</span>
+http://localhost:4000/
+</code></pre></div></div>
+
+<p>由于是 <code class="highlighter-rouge">gitclone</code> 工程文件,因此部分涉及到工程属性的文件可能会有冲突, 执行 <code class="highlighter-rouge">bundle exec jekyll serve</code> 时报错:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/home/q/gems/gems/jekyll-4.0.1/lib/jekyll/cache.rb:171:in <span class="sb">`</span>load<span class="s1">': dump format error for symbol(0x45) (ArgumentError)
+</span></code></pre></div></div>
+
+<p>解决方案: <code class="highlighter-rouge">bundle exec jekyll clean</code>, 然后在执行  <code class="highlighter-rouge">bundle exec jekyll serve</code></p>
+
+<ul>
+  <li><a href="https://ywnz.com/linuxyffq/4335.html">参考文档</a></li>
+  <li><a href="https://matters.news/@kaixdev/37388-ubuntu-18-04-%E5%AE%89%E8%A3%9D-jekyll-bafyreiakfcusg4cg2ljgmylawk4tdcuhpbczs72xugg77p2pvwy3nqlica">参考文档</a></li>
+  <li><a href="https://juejin.cn/post/6844903890601639944">参考文档</a></li>
+  <li><a href="https://juejin.cn/post/7023735670640214023">参考文档</a></li>
+</ul>
+
+<blockquote>
+  <p>Q: 为什么预览的时候有这篇文章,上传后不显示呢.<br />
+A: 每次上传:<br />
+  bundle exec jekyll clean<br />
+  bundle exec jekyll serve</p>
+</blockquote>
+
+        </article>
+        <small><strong>原文地址</strong> https://quitino.github.io/2022/08/28/ubuntu-install-jekyll/</small>
+        <hr>
+		
+<div id="post-reward" class="post-reward">
+  <input type="checkbox" name="reward" id="reward" hidden="" />
+  <label class="reward-button" for="reward">赞赏支持</label>
+  <div class="qr-code">
+    
+    <label class="qr-code-image" for="reward">
+      <img class="image" src="/assets/images/wechat-pay.jpg" />
+      <span>微信赞赏</span>
+    </label>
+     
+  </div>
+</div>
+
+<script></script>
+
+
+		<hr>
+        
+        
+            
+            
+                
+                    
+                
+                    
+                
+            
+        
+        
+
+        <div class="post-recent">
+    <div class="pre">
+        
+        <p><strong>上一篇</strong> <a href="/2022/08/28/classmates-dinner/">同学小聚&建站之旅</a></p>
+        
+    </div>
+    <div class="nex">
+
+        
+    </div>
+</div>
+
+
+        <h2 id="comments">Comments</h2>
+		
+
+
+
+
+
+
+
+
+<div id="waline"></div>
+  <script>
+    Waline.init({
+      el: '#waline',
+      serverURL: '',
+      comment: true, // 评论数统计
+    });
+  </script>
+
+
+
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    
+                    <li><a href="#comments">评论</a></li>
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
+</div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a:not([id])')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
+<script src="/js/pageContent.js " charset="utf-8"></script>
+<script src="https://cdn.bootcss.com/clipboard.js/2.0.4/clipboard.min.js"></script>
+<script src="/js/code-copy.js "></script>
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+             慢即是快 
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/quitino" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>  
+            <a href="mailto:booofeng@163.com" title="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>        
+            <a href="/feed.xml" title="RSS"><i class="fa fa-rss" aria-hidden="true"></i></a>
+        </p>
+        <p>
+            本站总访问量<span id="busuanzi_value_site_pv"></span>次，本站访客数<span id="busuanzi_value_site_uv"></span>人次，本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+        </p>
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+            <span>
+                Theme designed by <a href="https://github.com/Gaohaoyang">HyG</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/smooth-scroll.min.js " charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+    <!-- <script src=" /js/scroll.min.js " charset="utf-8"></script> -->
+  </body>
+
+</html>
