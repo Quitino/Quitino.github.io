@@ -25,6 +25,7 @@ jobs:
         run: bundle exec jekyll build
       
       - name: Upload artifact
+        # 改为 v2 版本
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./_site
