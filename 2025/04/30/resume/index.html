@@ -214,7 +214,7 @@
 
             <div class="label-card">
               <small style="color: #586069;">
-                本文 773 字，阅读全文约需 3  分钟
+                本文 1058 字，阅读全文约需 4  分钟
               </small>
             </div>
 
@@ -227,6 +227,7 @@
   <li><a href="#202303-202308--基于nerf的三维地图重建" id="markdown-toc-202303-202308--基于nerf的三维地图重建">2023.03-2023.08 | 基于Nerf的三维地图重建</a></li>
   <li><a href="#202203-202302--基于cartographer的语义地图" id="markdown-toc-202203-202302--基于cartographer的语义地图">2022.03-2023.02 | 基于cartographer的语义地图</a></li>
   <li><a href="#202108-202202--基于车辆轨迹的路网提取" id="markdown-toc-202108-202202--基于车辆轨迹的路网提取">2021.08-2022.02 | 基于车辆轨迹的路网提取</a></li>
+  <li><a href="#201804-202012--应急处置机器人关键技术研究" id="markdown-toc-201804-202012--应急处置机器人关键技术研究">2018.04-2020.12 | *应急处置机器人关键技术研究</a></li>
 </ul>
 
 <p>简单记录一些项目。</p>
@@ -354,6 +355,36 @@
 </table>
 
 <p>使用车辆轨迹进行膨胀、平滑、骨架提取、骨架扫描等处理获取骨架中的junction和link。然后再对路网进行精细化处理如Junction融合、剔除细小分支、自身环分割、 B样条平滑等获取更加准确的路网信息。</p>
+
+<h2 id="201804-202012--应急处置机器人关键技术研究">2018.04-2020.12 | *应急处置机器人关键技术研究</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">点线特征</th>
+      <th style="text-align: center">demo1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="/assets/resume/pld_01.png" alt="" /></td>
+      <td style="text-align: center"><img src="/assets/resume/pld_01.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">demo2</td>
+      <td style="text-align: center">demo3</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><img src="/assets/resume/pld_02.png" alt="" /></td>
+      <td style="text-align: center"><img src="/assets/resume/pld_03.png" alt="" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>项目概述： 基于VINS-Mono开发，采用点线特征+深度信息+IMU进行实现定位，同时将位姿以及RGB-D信息传入地图重建模块实现基于Surfel模型对场景进行三维重建。 另外负责移植场景目标识别算法（组内同学使用yolo实现） 到系统中。</li>
+  <li>软件环境： C++； 硬件环境： NVIDIA Xavier、 Intel realsense D435i、 PC； 开发工具： Ubuntu16.04、 ROS、 OpenCV、 PCL、 ceres等</li>
+</ul>
 
         </article>
         <small><strong>原文地址</strong> https://quitino.github.io/2025/04/30/resume/</small>
