@@ -63,7 +63,7 @@ reward:
 # hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
 # xxxxx字符串
 baidu_tongji_id: eb029a624e1ba4210c20a363f815e67b
-google_analytics_id:
+google_analytics_id: G-Y1X18RPWHK
 
 # Build settings
 markdown: kramdown
