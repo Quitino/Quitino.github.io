@@ -21,7 +21,7 @@
 
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
     <link rel="stylesheet" href="/css/main.css ">
-    <link rel="canonical" href="https://quitino.github.io/2025/04/30/resume/">
+    <link rel="canonical" href="https://quitino.github.io/2026/10/12/resume/">
     <link rel="alternate" type="application/rss+xml" title="Quitino" href="https://quitino.github.io/feed.xml ">
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4505690491252051"
@@ -198,7 +198,7 @@
         <div class="label">
 
             <div class="label-card">
-                <i class="fa fa-calendar"></i>2025-04-30
+                <i class="fa fa-calendar"></i>2026-10-12
             </div>
 
             <div class="label-card">
@@ -246,7 +246,7 @@
 
             <div class="label-card">
               <small style="color: #586069;">
-                本文 2340 字，阅读全文约需 7  分钟
+                本文 3476 字，阅读全文约需 10  分钟
               </small>
             </div>
 
@@ -254,7 +254,11 @@
         <hr>
         <article itemscope itemtype="http://schema.org/BlogPosting">
         <ul id="markdown-toc">
-  <li><a href="#202406-至今--经验轨迹" id="markdown-toc-202406-至今--经验轨迹">2024.06-至今 | 经验轨迹</a></li>
+  <li><a href="#202605-至今--离线导航场" id="markdown-toc-202605-至今--离线导航场">2026.05-至今 | 离线导航场</a></li>
+  <li><a href="#202510-202605--onlinemap自动化标注" id="markdown-toc-202510-202605--onlinemap自动化标注">2025.10-2026.05 | OnlineMap自动化标注</a></li>
+  <li><a href="#202505-202510--自然路网" id="markdown-toc-202505-202510--自然路网">2025.05-2025.10 | 自然路网</a></li>
+  <li><a href="#202411-202505--navnet基于学习的偏航检测" id="markdown-toc-202411-202505--navnet基于学习的偏航检测">2024.11-2025.05 | navnet基于学习的偏航检测</a></li>
+  <li><a href="#202406-202411--经验轨迹" id="markdown-toc-202406-202411--经验轨迹">2024.06-2024.11 | 经验轨迹</a></li>
   <li><a href="#202412-202504--学习项目--自主代客泊车理论与实践第一期" id="markdown-toc-202412-202504--学习项目--自主代客泊车理论与实践第一期">2024.12-2025.04 | 学习项目 | 《自主代客泊车理论与实践》第一期</a></li>
   <li><a href="#202310-202405--激光众包多程建图" id="markdown-toc-202310-202405--激光众包多程建图">2023.10-2024.05 | 激光众包（多程）建图</a></li>
   <li><a href="#202305-202308--学习项目-自动驾驶与机器人中的slam技术-第一期" id="markdown-toc-202305-202308--学习项目-自动驾驶与机器人中的slam技术-第一期">2023.05-2023.08 | 学习项目 |《自动驾驶与机器人中的SLAM技术》 第一期</a></li>
@@ -269,7 +273,137 @@
 
 <p>简单记录一些项目。</p>
 
-<h2 id="202406-至今--经验轨迹">2024.06-至今 | 经验轨迹</h2>
+<h2 id="202605-至今--离线导航场">2026.05-至今 | 离线导航场</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">场景1</th>
+      <th style="text-align: center">场景2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="/assets/resume/offline_01.png" alt="" /></td>
+      <td style="text-align: center"><img src="/assets/resume/offline_03.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><img src="/assets/resume/offline_02.png" alt="" /></td>
+      <td style="text-align: center"><img src="/assets/resume/offline_04.png" alt="" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>利用众源数据，针对特定困难路由场景挖掘推荐区域、可行驶但不推荐区域、不可行驶区域；参考路径；localmap等信息</li>
+</ul>
+
+<h2 id="202510-202605--onlinemap自动化标注">2025.10-2026.05 | OnlineMap自动化标注</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">pipeline</th>
+      <th style="text-align: center">reloc view</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="/assets/resume/online_map_01.png" alt="" /></td>
+      <td style="text-align: center"><img src="/assets/resume/online_map_01.gif" alt="" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>目的：</p>
+
+<ul>
+  <li>自动驾驶训练与评测业务对静态地图要素标注需求持续增长，传统人工标注效率低、成本高，难以保证大规模生产下的一致性与稳定性；本项目建设自动化标注体系，实现静态地图要素自动生成、矢量重定位与质量评估闭环，提升静态地图要素生产效率，满足几何精度、语义一致性、拓扑连续性、规模化生产的要求。</li>
+</ul>
+
+<p>IO:</p>
+
+<ul>
+  <li>输入：7 路环视相机图像、GNSS/IMU 数据、预装高精地图、车载历史轨迹、BEV 感知、2D 分割结果</li>
+  <li>输出：经过联合优化、自动化质检后的标准化静态地图要素标注产物（车道线、停止线、路灯杆、交通灯等）</li>
+</ul>
+
+<p>算法流程：</p>
+
+<ol>
+  <li>多源数据预处理与时空对齐，统一各类传感器、地图、轨迹数据，得到稳定初值；</li>
+  <li>针对车道线、停止线、路灯杆、交通灯等要素，设计分类关联策略与几何筛选规则，完成感知结果与地图元素候选匹配；</li>
+  <li>基于 3D-2D 重投影、方向一致性约束、Chamfer 距离、鲁棒核函数，构建位姿、外参与地图要素联合优化模型，对齐感知观测与地图先验；</li>
+  <li>轨迹融合：融合 GNSS、IMU、视觉定位结果到统一连续时空坐标系，抑制局部观测噪声，为矢量重定位提供稳定初值；</li>
+  <li>自动化质检、可视化交互、结果存储，输出标准化标注成果，支撑批量生产与迭代，服务下游多业务团队，形成完整生产链路。</li>
+</ol>
+
+<h2 id="202505-202510--自然路网">2025.05-2025.10 | 自然路网</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">网格划分与gmm聚类</th>
+      <th style="text-align: center">训练数据可视化示例2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="/assets/resume/nature_01.png" alt="" /></td>
+      <td style="text-align: center"><img src="/assets/resume/nature_02.png" alt="" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>生产资料仅使用轨迹信息</li>
+  <li>高斯混合模型(GMM) + 直方图峰值点 融合得到各section车道级中心线点</li>
+  <li>逐级生成 section_graph、road_graph、lane_graph</li>
+</ul>
+
+<h2 id="202411-202505--navnet基于学习的偏航检测">2024.11-2025.05 | navnet基于学习的偏航检测</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">训练数据可视化示例1</th>
+      <th style="text-align: center">训练数据可视化示例2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="/assets/resume/nav_01.png" alt="" /></td>
+      <td style="text-align: center"><img src="/assets/resume/nav_02.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">样本类型均匀化</td>
+      <td style="text-align: center">注意力图</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><img src="/assets/resume/nav_03.png" alt="" /></td>
+      <td style="text-align: center"><img src="/assets/resume/nav_04.png" alt="" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>目的：</p>
+<ul>
+  <li>主辅路等困难场景容易发生偏航，偏航检测模型旨在发生偏航时尽早发现偏航行为，进行纠正。</li>
+</ul>
+
+<p>IO:</p>
+<ul>
+  <li>输入轨迹矢量数据、BEV感知数据以及sdmap数据</li>
+  <li>输出当前车辆所在SD link</li>
+</ul>
+
+<p>算法流程：</p>
+
+<ul>
+  <li>将车道线、道路边界，停止线等元素表示为向量形式。例如每条车道线可能由多个点组成，每个点有坐标和属性，比如类型（车道线、停止线等）。然后，这些向量会被编码成高维特征，通过子图网络和全局图网络进行交互，最后进行分类任务。</li>
+</ul>
+
+<h2 id="202406-202411--经验轨迹">2024.06-2024.11 | 经验轨迹</h2>
 
 <table>
   <thead>
@@ -608,7 +742,7 @@
 <p>摄像头组。利用摄像头采集并处理后得到自车位置，利用编码器测量车模速度，构成速度闭环控制；利用左右轮子的差速，实现车模转向；利用PID控制算法控制电机和舵机；利用蓝牙、上位机、OLED屏幕等对程序进行调试，实现小车循迹运行。</p>
 
         </article>
-        <small><strong>原文地址</strong> https://quitino.github.io/2025/04/30/resume/</small>
+        <small><strong>原文地址</strong> https://quitino.github.io/2026/10/12/resume/</small>
         <hr>
 		
 <div id="post-reward" class="post-reward">
